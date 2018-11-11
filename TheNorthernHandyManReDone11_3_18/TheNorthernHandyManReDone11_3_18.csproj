@@ -149,7 +149,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\LandscapeDesignandBuildAlbumController.cs" />
+    <Compile Include="Controllers\LandScapeMaintanceAlbumController.cs" />
+    <Compile Include="Controllers\SkidSteerAlbumController.cs" />
+    <Compile Include="Controllers\SnowRemovalAlbumController.cs" />
+    <Compile Include="Controllers\TreeRemovalAlbumController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,6 +184,10 @@
     <Content Include="img\bg_noise-bg.png" />
     <Content Include="img\Brush Remoal-Hogging\PileofBrush.jpg" />
     <Content Include="img\Brush Remoal-Hogging\PileofBrush_210x280.jpg" />
+    <Content Include="img\Brush Remoal-Hogging\received_1832107667081244.jpeg" />
+    <Content Include="img\Brush Remoal-Hogging\received_1832107697081241.jpeg" />
+    <Content Include="img\Brush Remoal-Hogging\received_1889772087748782.jpeg" />
+    <Content Include="img\Brush Remoal-Hogging\received_308391163270889.jpeg" />
     <Content Include="img\clients\client1.png" />
     <Content Include="img\clients\client2.png" />
     <Content Include="img\clients\client3.png" />
@@ -255,10 +263,31 @@
     <Content Include="img\Filler_ExtraImages\YouTube_Play_Button.jpg" />
     <Content Include="img\FireWood\FireWoodPile1.jpg" />
     <Content Include="img\FireWood\FireWoodPile1_210x280.jpg" />
+    <Content Include="img\Landscape\ jerky.jpeg" />
+    <Content Include="img\Landscape\24131023_1626467277374593_7423038814979355674_n.jpg" />
+    <Content Include="img\Landscape\24174351_1626467274041260_663250722257880735_n.jpg" />
+    <Content Include="img\Landscape\24176991_1626467280707926_7519556500845134677_n.jpg" />
+    <Content Include="img\Landscape\4714421615_ab7b567ac4_z.jpg" />
+    <Content Include="img\Landscape\Blackburn.jpeg" />
+    <Content Include="img\Landscape\Brig.jpeg" />
+    <Content Include="img\Landscape\Cerro.jpeg" />
+    <Content Include="img\Landscape\Kyiv.jpeg" />
+    <Content Include="img\Landscape\Madrid.jpeg" />
+    <Content Include="img\Landscape\Our.jpeg" />
+    <Content Include="img\Landscape\Really.jpeg" />
+    <Content Include="img\Leaf Removal\24058968_1626465144041473_4510364695590479034_n.jpg" />
+    <Content Include="img\Leaf Removal\24232554_1626465150708139_3182305410267407728_n.jpg" />
+    <Content Include="img\Leaf Removal\24294041_1626465147374806_1763132755822018943_n.jpg" />
+    <Content Include="img\Leaf Removal\24294112_1626465140708140_6022348688224473533_n.jpg" />
     <Content Include="img\Leaf Removal\CoverPhoto.jpeg" />
     <Content Include="img\Leaf Removal\DuringLeafApart.jpeg" />
     <Content Include="img\Leaf Removal\DuringLeafApart2.jpeg" />
     <Content Include="img\Leaf Removal\DuringLeafApart3.jpeg" />
+    <Content Include="img\Leaf Removal\jpg.jpeg" />
+    <Content Include="img\Leaf Removal\received_1831580047134006.jpeg" />
+    <Content Include="img\Leaf Removal\received_1831580087134002.jpeg" />
+    <Content Include="img\Leaf Removal\received_1831580137133997.jpeg" />
+    <Content Include="img\Leaf Removal\received_1831580140467330.jpeg" />
     <Content Include="img\LimbRemoval\LimbRemoval.jpg" />
     <Content Include="img\LimbRemoval\LimbRemoval1.jpg" />
     <Content Include="img\LimbRemoval\LimbRemoval1_210x280.jpg" />
@@ -320,6 +349,13 @@
     <Content Include="img\showcase\project7.png" />
     <Content Include="img\showcase\project8.png" />
     <Content Include="img\showcase\project9.png" />
+    <Content Include="img\SKIDSTEER\32085076_1795604523794200_8810072286057988096_n.jpg" />
+    <Content Include="img\SKIDSTEER\32090017_1795604423794210_554929595917271040_n.jpg" />
+    <Content Include="img\SKIDSTEER\32116485_1795604537127532_4178064286272192512_n.jpg" />
+    <Content Include="img\SKIDSTEER\32147965_1795604417127544_3471636238748876800_n.jpg" />
+    <Content Include="img\SKIDSTEER\32169940_1795604580460861_6133834011656585216_n.jpg" />
+    <Content Include="img\SKIDSTEER\32187271_1795604453794207_5993781987196796928_n.jpg" />
+    <Content Include="img\SKIDSTEER\32294044_1795604140460905_5126993664865730560_n.jpg" />
     <Content Include="img\SKIDSTEER\received_1898246343800709.jpeg" />
     <Content Include="img\slides\slide1.png" />
     <Content Include="img\slides\slide2.png" />
@@ -330,6 +366,8 @@
     <Content Include="img\SnowServices\SnowPlowing_edited.jpg" />
     <Content Include="img\SnowServices\Snowy_Parkinglot_edited.jpg" />
     <Content Include="img\StumpGrinding\FullStumpRemoval_291x164.jpg" />
+    <Content Include="img\StumpGrinding\received_243595782970730.jpeg" />
+    <Content Include="img\StumpGrinding\received_297841447711696.jpeg" />
     <Content Include="img\StumpGrinding\StumpGrinding1.jpg" />
     <Content Include="img\StumpGrinding\StumpGrinding1_210x280.jpg" />
     <Content Include="img\StumpGrinding\StumpGrinding2.jpg" />
@@ -360,6 +398,11 @@
     <Content Include="img\TreeRemoval\LargeTree.PNG" />
     <Content Include="img\TreeRemoval\LargeTreeRemoval.jpg" />
     <Content Include="img\TreeRemoval\LargeTree_210x280.png" />
+    <Content Include="img\TreeRemoval\received_1832107543747923.jpeg" />
+    <Content Include="img\TreeRemoval\received_1832107547081256.jpeg" />
+    <Content Include="img\TreeRemoval\received_1832107607081250.jpeg" />
+    <Content Include="img\TreeRemoval\received_1832107670414577.jpeg" />
+    <Content Include="img\TreeRemoval\received_1832107683747909.jpeg" />
     <Content Include="img\TreeRemoval\TreeRemovalCleanUp3-4.jpg" />
     <Content Include="img\TreeRemoval\TreeRemovalCleanUp3-4_210x280.jpg" />
     <Content Include="img\TreeRemoval\TreeRemovalDuring2-4.jpg" />
@@ -372,6 +415,11 @@
     <Content Include="img\Trimming\Pruning#2.jpg" />
     <Content Include="img\Trimming\Pruning#3.jpg" />
     <Content Include="img\Trimming\pruning.jpg" />
+    <Content Include="img\Trimming\received_280861552735798.jpeg" />
+    <Content Include="img\Trimming\received_329338950964932.jpeg" />
+    <Content Include="img\Trimming\received_474863083016968.jpeg" />
+    <Content Include="img\Trimming\received_478634842618592.jpeg" />
+    <Content Include="img\Trimming\received_544010249353345.jpeg" />
     <Content Include="img\Trimming\Trimming1.jpg" />
     <Content Include="img\Trimming\Trimming2.jpg" />
     <Content Include="img\Trimming\Trimming2_210x280.jpg" />
@@ -465,11 +513,40 @@
     <Content Include="Views\Home\Winter_Services_Index.cshtml" />
     <Content Include="Views\Home\Images.cshtml" />
     <Content Include="Views\Home\ImagesSideBar.cshtml" />
+    <Content Include="Views\Home\Albums.cshtml" />
+    <Content Include="Views\SkidSteerAlbum\SnowPlowing.cshtml" />
+    <Content Include="Views\SkidSteerAlbum\MainAlbumPage.cshtml" />
+    <Content Include="Views\SkidSteerAlbum\LandScaping.cshtml" />
+    <Content Include="Views\SkidSteerAlbum\DriveWayReconstruction.cshtml" />
+    <Content Include="Views\SkidSteerAlbum\ParkingLotSwweping.cshtml" />
+    <Content Include="Views\SkidSteerAlbum\BrushAndRockRemoving.cshtml" />
+    <Content Include="Views\TreeRemovalAlbum\StormDamageRepairRemoval.cshtml" />
+    <Content Include="Views\TreeRemovalAlbum\StumpGrindingandCleanUp.cshtml" />
+    <Content Include="Views\TreeRemovalAlbum\BrushRemovalandChipping.cshtml" />
+    <Content Include="Views\TreeRemovalAlbum\LotClearing.cshtml" />
+    <Content Include="Views\TreeRemovalAlbum\SmallandLargeTrees.cshtml" />
+    <Content Include="Views\TreeRemovalAlbum\Trimming.cshtml" />
+    <Content Include="Views\TreeRemovalAlbum\MainAlbumPage.cshtml" />
+    <Content Include="Views\SnowRemovalAlbum\Residential.cshtml" />
+    <Content Include="Views\SnowRemovalAlbum\Commercial.cshtml" />
+    <Content Include="Views\SnowRemovalAlbum\MainAlbumPage.cshtml" />
+    <Content Include="Views\LandScapeMaintanceAlbum\LawnService.cshtml" />
+    <Content Include="Views\LandScapeMaintanceAlbum\LeafCleanUps.cshtml" />
+    <Content Include="Views\LandScapeMaintanceAlbum\BrushRemoval.cshtml" />
+    <Content Include="Views\LandScapeMaintanceAlbum\Pruning.cshtml" />
+    <Content Include="Views\LandScapeMaintanceAlbum\Trimming.cshtml" />
+    <Content Include="Views\LandScapeMaintanceAlbum\SeasonalCleanUps.cshtml" />
+    <Content Include="Views\LandScapeMaintanceAlbum\MainAlbumPage.cshtml" />
+    <Content Include="Views\LandscapeDesignandBuildAlbum\MainAlbumPage.cshtml" />
+    <Content Include="Views\LandscapeDesignandBuildAlbum\FirePits.cshtml" />
+    <Content Include="Views\LandscapeDesignandBuildAlbum\LandscapeDesign.cshtml" />
+    <Content Include="Views\LandscapeDesignandBuildAlbum\RetainingWalls.cshtml" />
+    <Content Include="Views\LandscapeDesignandBuildAlbum\PatiosWalkWay.cshtml" />
+    <Content Include="Views\LandscapeDesignandBuildAlbum\LawnRepair.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
-    <Folder Include="Views\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
