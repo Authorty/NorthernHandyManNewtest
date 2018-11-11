@@ -2,6 +2,97 @@
 @{
     ViewBag.Title = "Albums";
 }
+<div class="container">
+<a href=~/img/ class="fa fa-plus fa"></a>
+    </div>
+<title>
+    Photos | TheNorthernHandyman
+</title>
 
-<h2>Albums</h2>
+<!-- Page Content -->
+<div class="container">
+    <!--Row-->
+    <div class="row">
 
+        <h1>
+            <a href='@Url.Action("Albums", "Home")'>Albums |</a>
+            <a href='@Url.Action("Images", "Home")'>Photos |</a>
+
+            <a href='@Url.Action("Videos", "Home")'>Videos |</a>
+        </h1> 
+        <hr/>
+        </div>
+    </div>
+    <!--/Row-->
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-xs-6  portfolio-item">
+
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+
+
+                    <a href="@Url.Action("MainAlbumPage","SkidSteerAlbum")">
+                        Skid Steer<img src="~/img/Equipment/SkidSteer_210x280.png"
+                                       class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-6  portfolio-item">
+
+
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+
+                </div>
+                <a href="@Url.Action("MainAlbumPage","LandscapeDesignandBuildAlbum")">
+                    LandScape Design
+                    <img src="~/img/Landscape/4714421615_ab7b567ac4_z.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-6  portfolio-item">
+
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+
+                </div>
+                <a href="@Url.Action("MainAlbumPage","LandScapeMaintanceAlbum")">
+                    LandScape Maintance
+                    <img src="~/img/Mowing/LawnCare.PNG" />
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-6  portfolio-item">
+
+
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+
+                </div>
+                <a href="@Url.Action("MainAlbumPage","SnowRemovalAlbum")">
+                    Snow Removal
+                    <img src="~/img/SnowServices/Snowy_Parkinglot_edited.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-6  portfolio-item">
+
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+
+                    </div>
+                    <a href="@Url.Action("MainAlbumPage","TreeRemovalAlbum")">
+                        Tree Removal
+                        <img src="~/img/TreeRemoval/received_1832107543747923.jpeg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<br/>

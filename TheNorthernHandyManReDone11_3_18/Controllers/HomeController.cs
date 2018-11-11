@@ -211,7 +211,7 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
         {
             return View();
         }
-        public ActionResult SKIDSTEERWORKPICS()
+        public ActionResult Images()
         {
             return View();
         }
