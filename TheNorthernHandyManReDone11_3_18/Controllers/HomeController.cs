@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -121,7 +120,6 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
             return null;
         }
 
-
         public ActionResult Services()
         {
             return View();
@@ -132,45 +130,7 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
         }
         public ActionResult Photos()
         {
-
-            var images = new List<ImagesViewModel>();
-
-            DirectoryInfo imageDir = null;
-            FileInfo[] imageFiles = null;
-
-            string dirPath = @"/img/";
-            imageDir = new DirectoryInfo(Server.MapPath(dirPath));
-
-            var imageChildren = imageDir.GetDirectories();
-
-            foreach (var imageDirectory in imageChildren)
-            {
-                
-                var DirectoryName = imageDirectory.Name;
-                if (DirectoryName != "clients" && DirectoryName != "backgrounds")
-                {
-                    var imagefilePath = "";
-
-                    foreach (var image in imageDirectory.GetFiles())
-                    {
-                        imagefilePath = @"/img/" + DirectoryName + "/" + image.Name;
-                        images.Add(new ImagesViewModel { Group = DirectoryName, Image = imagefilePath });
-                    }
-                }
-
-
-                
-            }
-            //imageFiles = imageDir.GetFiles();
-            
-
-
-            ViewBag.Images = images;
-
-
-
-
-            return View("Images");
+            return View("AllPhotos");
         }
         public ActionResult Videos()
         {
@@ -247,5 +207,6 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
         {
             return View();
         }
+        //public ActionResult 
     }
 }
