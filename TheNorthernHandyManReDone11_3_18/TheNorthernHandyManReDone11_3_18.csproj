@@ -149,10 +149,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ContactEmailModels.cs" />
+    <Compile Include="Models\ImagesViewModel.cs" />
     <Compile Include="Models\test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -461,9 +463,13 @@
     <Content Include="Views\Home\Trimming.cshtml" />
     <Content Include="Views\Home\Videos.cshtml" />
     <Content Include="Views\Home\Winter_Services_Index.cshtml" />
+    <Content Include="Views\Home\Images.cshtml" />
+    <Content Include="Views\Home\ImagesSideBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
+    <Folder Include="Views\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

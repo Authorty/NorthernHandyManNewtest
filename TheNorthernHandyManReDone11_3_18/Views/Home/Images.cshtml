@@ -1,0 +1,57 @@
+﻿@using TheNorthernHandyManReDone11_3_18.Models;
+@{
+
+    ViewBag.Title = "Images | TheNorthernHandyman";
+    string lastImage = string.Empty;
+
+   
+}
+
+<h2>Images</h2>
+<head>
+
+</head>
+
+<div class="jumbotron">
+
+
+
+    @foreach (var image in ((List<ImagesViewModel>)ViewBag.Images).OrderBy(x=>x.Group))
+            {
+
+
+
+                <div class="col-lg-3">
+                    <a href="~/Content/Images/LimbRemoval1.jpg" data-title="" data-lightbox="Equip">
+                        <img src=@Url.Content(image.Image) width="300" height="300" class="img-thumbnail" />
+                    </a>
+
+                </div>
+
+                }
+
+
+
+
+        
+
+
+
+
+
+
+    
+</div>
+
+
+
+
+
+
+
+        <p>
+    <small>&copy; @DateTime.Now.Year - TheNorthernHandyman|Contact </small><br />
+    <small> Town of New London - Wauapaca County<br /></small>
+</p>
+
+

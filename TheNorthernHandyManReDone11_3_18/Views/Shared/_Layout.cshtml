@@ -15,12 +15,7 @@
     <meta property="og:site_name" content="">
     <meta property="og:description" content="">
 
-    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-    @*<meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">*@
+
      
     <!-- Fav and touch icons --> 
     <link rel="shortcut icon" href="~/favicon.ico">
@@ -133,17 +128,7 @@
                                 <br> The Northern Handyman
                             </div>
                         </div>
-                        <!--header rightside-->
-                        @*<div class="col-md-4">
-                            user menu
-                            <ul class="list-inline user-menu pull-right">
-                                <li class="user-button"><a class="btn btn-primary btn-hh-trigger" role="button" data-toggle="collapse" data-target=".header-hidden">Open</a></li>
-                            </ul>
-                            <ul class="list-inline user-menu pull-right">
-                                <li class="user-register"><i class="fa fa-edit text-primary "></i> <a href='@Url.Action("Register","Account",null)'class="text-uppercase">Register</a></li>
-                                <li class="user-login"><i class="fa fa-sign-in text-primary"></i> <a href='@Url.Action("Login","Account",null)' class="text-uppercase">Login + @User.Identity.Name</a></li>
-                            </ul>
-                        </div>*@
+      
                     </div>
                 </div>
             </div>
@@ -185,7 +170,6 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        @*<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mega Menu<b class="caret"></b></a>*@
                         <!-- Dropdown Menu -->
                         <ul class="dropdown-menu dropdown-menu-mm dropdown-menu-persist">
                             <li class="row">
@@ -239,121 +223,9 @@
                 <a href=@Url.Action("Contact","Home") class="btn btn-more btn-lg i-right">Join them today! <i class="fa fa-angle-right"></i></a>
             </p>
         </div>
-        @*<!--Customer testimonial & Latest Blog posts-->
-        <div class="testimonials block-contained">
-            <div class="row">
-                <!--Customer testimonial-->
-                <div class="col-md-6 m-b-lg">
-                    <h3 class="block-title">
-                        Testimonials
-                    </h3>
-                    <blockquote>
-                        <p>Our productivity &amp; sales are up! Customers are happy &amp; we couldn't be happier with this product!</p>
-                        <img src="~/~/img/misc/charles-quote.png" alt="Charles Spencer Chaplin">
-                        <small>
-                            <strong>Charles Chaplin</strong>
-                            <br>
-                            British comic actor
-                        </small>
-                    </blockquote>
-                </div>
-                <!--Latest Blog posts-->
-                <div class="col-md-6 blog-roll">
-                    <h3 class="block-title">
-                        Latest From Our Blog
-                    </h3>
-                    <!-- Blog post 1-->
-                    <div class="media">
-                        <div class="media-left hidden-xs">
-                            <!-- Date desktop -->
-                            <div class="date-wrapper"> <span class="date-m">Feb</span> <span class="date-d">01</span> </div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#" class="text-weight-strong">amet urna integer urna enim, sit arcu pid in nec?</a>
-                            </h4>
-                            <!-- Meta details mobile -->
-                            <ul class="list-inline meta text-muted visible-xs">
-                                <li><i class="fa fa-calendar"></i> <span class="visible-md">Created:</span> Fri 1st Feb 2013</li>
-                                <li><i class="fa fa-user"></i> <a href="#">Joe</a></li>
-                            </ul>
-                            <p>
-                                Ut <strong>commodo ullamcorper risus nec</strong> mattis. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
-                                <a href="#">Read more <i class="fa fa-angle-right"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Blog post 2 -->
-                    <div class="media">
-                        <div class="media-left hidden-xs">
-                            <!-- Date desktop -->
-                            <div class="date-wrapper"> <span class="date-m">Jan</span> <span class="date-d">17</span> </div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#" class="text-weight-strong">a nec in sed hac ultrices cursus</a>
-                            </h4>
-                            <!-- Meta details mobile -->
-                            <ul class="list-inline meta text-muted visible-xs">
-                                <li><i class="fa fa-calendar"></i> <span class="visible-md">Created:</span> Thu 17th Jan 2013</li>
-                                <li><i class="fa fa-user"></i> <a href="#">Joe</a></li>
-                            </ul>
-                            <p>
-                                Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Aenean at massa leo. Vestibulum in varius arcu.
-                                <a href="#">Read more <i class="fa fa-angle-right"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
+
     </div>
-    <!-- /content -->
-    <!-- Call out block -->
-    @*<div class="block block-pd-sm block-bg-primary">
-        <div class="container">
-            <div class="row">
-                <h3 class="col-md-4">
-                    Some of our Clients
-                </h3>
-                <div class="col-md-8">
-                    <div class="row">
-                        Client logos should be within a 120px wide by 60px height image canvas
-                        <div class="col-xs-6 col-md-2">
-                            <a href="https://bootstrapmade.com" title="Client 1">
-                                <img src="~/img/clients/client1.png" alt="Client 1 logo" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-md-2">
-                            <a href="https://bootstrapmade.com" title="Client 2">
-                                <img src="~/img/clients/client2.png" alt="Client 2 logo" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-md-2">
-                            <a href="https://bootstrapmade.com" title="Client 3">
-                                <img src="~/img/clients/client3.png" alt="Client 3 logo" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-md-2">
-                            <a href="https://bootstrapmade.com" title="Client 4">
-                                <img src="~/img/clients/client4.png" alt="Client 4 logo" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-md-2">
-                            <a href="https://bootstrapmade.com" title="Client 5">
-                                <img src="~/img/clients/client5.png" alt="Client 5 logo" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-md-2">
-                            <a href="https://bootstrapmade.com" title="Client 6">
-                                <img src="~/img/clients/client6.png" alt="Client 6 logo" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>*@
+ 
 
     <!-- ======== Region: #footer ======== -->
     <footer id="footer" class="block block-bg-grey-dark" data-block-bg-img="~/img/bg_footer-map.png" data-stellar-background-ratio="0.4">
@@ -361,21 +233,7 @@
             <div class="row">
                 <div class="col-sm-5 col-md-4">
                     <br />
-                    @* Personalized Logo Hyper-Linked to Facebook *@
-                    @*<a href="https://www.facebook.com/NorthernHandyman/">
-                        <img id="FooterLogo" src="~/Images/Filler_ExtraImages/Untitled.Resized.png" />
-                    </a>*@
-                    @*<address>
-                        <strong>The Northern Handyman Inc.</strong>
-                        <br>
-                        <i class="fa fa-map-pin fa-fw text-primary"></i>Location : N5043 Larry Rd. New London, WI 54961
-                        <br>
-                        <i class="fa fa-phone fa-fw text-primary"></i>Phone : 920.277.5947
-                        <br>
-                        <i class="fa fa-envelope-o fa-fw text-primary"></i> Email Me : TheNorthernHandyman@gmail.com
-                        <br>
-                    </address>*@
-                @* Contact Us Colum *@
+                  
                 <h2 id="ColumHeader"> Contact Us </h2>
 
                 @* Location icon/ Address *@
