@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NorthernHandymanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Groups">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="200" />
+          <Property Name="SortOrder" Type="int" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ImageGroups">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GroupsId" Type="int" />
+          <Property Name="ImageId" Type="int" />
+          <Property Name="BeforeAfter" Type="bit" />
+          <Property Name="Before" Type="bit" />
+          <Property Name="LinkedImage" Type="int" />
+          <Property Name="SortOrder" Type="int" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Images">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ImageName" Type="nvarchar" MaxLength="150" />
+          <Property Name="FolderName" Type="int" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="SortOrder" Type="int" />
+          <Property Name="ImageData" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK__ImageGrou__Group__145C0A3F">
+          <End Role="Groups" Type="Self.Groups" Multiplicity="0..1" />
+          <End Role="ImageGroups" Type="Self.ImageGroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Groups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageGroups">
+              <PropertyRef Name="GroupsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ImageGrou__Image__15502E78">
+          <End Role="Images" Type="Self.Images" Multiplicity="0..1" />
+          <End Role="ImageGroups" Type="Self.ImageGroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Images">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageGroups">
+              <PropertyRef Name="ImageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ImageGrou__Linke__164452B1">
+          <End Role="ImageGroups" Type="Self.ImageGroups" Multiplicity="0..1" />
+          <End Role="ImageGroups1" Type="Self.ImageGroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ImageGroups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageGroups1">
+              <PropertyRef Name="LinkedImage" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NorthernHandymanModelStoreContainer">
+          <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ImageGroups" EntityType="Self.ImageGroups" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Images" EntityType="Self.Images" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__ImageGrou__Group__145C0A3F" Association="Self.FK__ImageGrou__Group__145C0A3F">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="ImageGroups" EntitySet="ImageGroups" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ImageGrou__Image__15502E78" Association="Self.FK__ImageGrou__Image__15502E78">
+            <End Role="Images" EntitySet="Images" />
+            <End Role="ImageGroups" EntitySet="ImageGroups" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ImageGrou__Linke__164452B1" Association="Self.FK__ImageGrou__Linke__164452B1">
+            <End Role="ImageGroups" EntitySet="ImageGroups" />
+            <End Role="ImageGroups1" EntitySet="ImageGroups" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NorthernHandymanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Group">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SortOrder" Type="Int32" />
+          <Property Name="Active" Type="Boolean" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ImageGroups" Relationship="Self.FK__ImageGrou__Group__145C0A3F" FromRole="Groups" ToRole="ImageGroups" />
+        </EntityType>
+        <EntityType Name="ImageGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GroupsId" Type="Int32" />
+          <Property Name="ImageId" Type="Int32" />
+          <Property Name="BeforeAfter" Type="Boolean" />
+          <Property Name="Before" Type="Boolean" />
+          <Property Name="LinkedImage" Type="Int32" />
+          <Property Name="SortOrder" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Group" Relationship="Self.FK__ImageGrou__Group__145C0A3F" FromRole="ImageGroups" ToRole="Groups" />
+          <NavigationProperty Name="Image" Relationship="Self.FK__ImageGrou__Image__15502E78" FromRole="ImageGroups" ToRole="Images" />
+          <NavigationProperty Name="ImageGroups1" Relationship="Self.FK__ImageGrou__Linke__164452B1" FromRole="ImageGroups" ToRole="ImageGroups1" />
+          <NavigationProperty Name="ImageGroup1" Relationship="Self.FK__ImageGrou__Linke__164452B1" FromRole="ImageGroups1" ToRole="ImageGroups" />
+        </EntityType>
+        <EntityType Name="Image">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="FolderName" Type="Int32" />
+          <Property Name="Active" Type="Boolean" />
+          <Property Name="SortOrder" Type="Int32" />
+          <Property Name="ImageData" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="ImageGroups" Relationship="Self.FK__ImageGrou__Image__15502E78" FromRole="Images" ToRole="ImageGroups" />
+        </EntityType>
+        <Association Name="FK__ImageGrou__Group__145C0A3F">
+          <End Role="Groups" Type="Self.Group" Multiplicity="0..1" />
+          <End Role="ImageGroups" Type="Self.ImageGroup" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Groups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageGroups">
+              <PropertyRef Name="GroupsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ImageGrou__Image__15502E78">
+          <End Role="Images" Type="Self.Image" Multiplicity="0..1" />
+          <End Role="ImageGroups" Type="Self.ImageGroup" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Images">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageGroups">
+              <PropertyRef Name="ImageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ImageGrou__Linke__164452B1">
+          <End Role="ImageGroups" Type="Self.ImageGroup" Multiplicity="0..1" />
+          <End Role="ImageGroups1" Type="Self.ImageGroup" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ImageGroups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageGroups1">
+              <PropertyRef Name="LinkedImage" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NorthernHandymanEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Groups" EntityType="Self.Group" />
+          <EntitySet Name="ImageGroups" EntityType="Self.ImageGroup" />
+          <EntitySet Name="Images" EntityType="Self.Image" />
+          <AssociationSet Name="FK__ImageGrou__Group__145C0A3F" Association="Self.FK__ImageGrou__Group__145C0A3F">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="ImageGroups" EntitySet="ImageGroups" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ImageGrou__Image__15502E78" Association="Self.FK__ImageGrou__Image__15502E78">
+            <End Role="Images" EntitySet="Images" />
+            <End Role="ImageGroups" EntitySet="ImageGroups" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ImageGrou__Linke__164452B1" Association="Self.FK__ImageGrou__Linke__164452B1">
+            <End Role="ImageGroups" EntitySet="ImageGroups" />
+            <End Role="ImageGroups1" EntitySet="ImageGroups" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NorthernHandymanModelStoreContainer" CdmEntityContainer="NorthernHandymanEntities">
+          <EntitySetMapping Name="Groups">
+            <EntityTypeMapping TypeName="NorthernHandymanModel.Group">
+              <MappingFragment StoreEntitySet="Groups">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImageGroups">
+            <EntityTypeMapping TypeName="NorthernHandymanModel.ImageGroup">
+              <MappingFragment StoreEntitySet="ImageGroups">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="GroupsId" ColumnName="GroupsId" />
+                <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+                <ScalarProperty Name="BeforeAfter" ColumnName="BeforeAfter" />
+                <ScalarProperty Name="Before" ColumnName="Before" />
+                <ScalarProperty Name="LinkedImage" ColumnName="LinkedImage" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Images">
+            <EntityTypeMapping TypeName="NorthernHandymanModel.Image">
+              <MappingFragment StoreEntitySet="Images">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+                <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="ImageData" ColumnName="ImageData" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

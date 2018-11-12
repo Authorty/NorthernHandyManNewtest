@@ -124,97 +124,27 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
         {
             return View();
         }
-        public ActionResult SkidSteerWork()
-        {
-            return View();
-        }
-        public ActionResult Photos()
-        {
-            return View("AllPhotos");
-        }
+       
         public ActionResult Videos()
         {
             return View();
         }
-        public ActionResult Brush_Remvoal_Hogging()
-        {
-            return View();
-        }
-        public ActionResult Limb_Removal()
-        {
-            return View();
-        }
-        public ActionResult Mowing()
-        {
-            return View();
-        }
-        public ActionResult Projects()
-        {
-            return View();
-        }
-        public ActionResult Stump_Grinding()
-        {
-            return View();
-        }
-        public ActionResult Tree_Removal()
-        {
-            return View();
-        }
-        public ActionResult Trimming()
-        {
-            return View();
-        }
-        public ActionResult AllPhotos()
-        {
-            return View();
-        }
-        public ActionResult Tree_Stump_Removal_Index()
-        {
-            return View();
-        }
-        public ActionResult Landscape_Lawncare_Index(int? carouselId)
-        {
-            if (carouselId == null)
-            {
-                carouselId = 1;
-            }
 
-            ViewBag.CarouselId = carouselId;
+        public ActionResult FireWood()
+        {
+            return View();
+        }
 
-            return View();
-        }
-        public ActionResult Winter_Services_Index()
+        public ActionResult Employment()
         {
             return View();
         }
-        public ActionResult LeafRemoval()
+
+        public ActionResult Albums()
         {
             return View();
         }
-        public ActionResult AllPhotosPg6()
-        {
-            return View();
-        }
-        public ActionResult AllPhotosPg7()
-        {
-            return View();
-        }
-        public ActionResult AllPhotosPg8()
-        {
-            return View();
-        }
-        public ActionResult Portfolio_Modal1()
-        {
-            return View();
-        }
-               public ActionResult Albums()
-        {
-            return View();
-        }
-        public ActionResult Images()
-        {
-            return View();
-        }
+      
 
 
     }
