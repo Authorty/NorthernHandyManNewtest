@@ -3,27 +3,24 @@
 }
 <div class="hero" id="highlighted">
     <div class="inner">
-        <hr />
-
-
-
         <div id="highlighted-slider" class="container">
+            <hr />
             <div class="item-slider" data-toggle="owlcarousel" data-owlcarousel-settings='{"singleItem":true, "navigation":true, "transitionStyle":"fadeUp", "autoPlay":true}'>
                 <!--Slideshow content-->
                 <!--Slide 1-->
                 <div class="item">
                     <div class="row">
                         <div class="col-md-6 text-right-md item-caption">
-                            <h2 class="h1 text-muted text-weight-light">
+                            <h2 >
                                 <span class="text-primary">Servicing North Eastern Wisconsin</span> for over 30 Years!
                             </h2>
 
-                            <p class="text-muted">
-                                <b>
+                            <p>
+                             
                                     Have something small or large in mind, to transform your yard, or Business into a beautiful oasis?
                                     Look no further; let our years of experience help you make your dreams a reality.
                                     We specialize in residential and Commercial Communities.
-                                </b>
+                               
                             </p>
                             <h2 class="text-success">
                                 <b>
@@ -43,7 +40,7 @@
 
                 <div class="item">
                     <div class="row">
-                        <div class="col-md-6 col-md-push-6 item-caption text-fancy">
+                        <div class="col-md-6 col-md-push-6 item-caption">
                             <h2 class="h1 text-weight-light, text-primary">
                                 Summer Season: <br />Landscape Needs
                             </h2>
@@ -52,7 +49,7 @@
 
                                 Landscaping, Excavating,  Retaining Walls,
                                 with over 30 years of experience there is so much we can do for you.
-
+                                 
                             </h4>
                             <p>
                                 Being in the business for as long as we have, we have the skills to tame a widly
@@ -69,7 +66,7 @@
                 <!--Slide 3-->
                 <div class="item">
                     <div class="row">
-                        <div class="col-md-6 text-right-md item-caption text-fancy">
+                        <div class="col-md-6 text-right-md item-caption">
                             <h2 class="h1 text-weight-light">
                                 <span class="text-primary">
                                     Wisconsin Winter Season:
@@ -97,42 +94,43 @@
         </div>
     </div>
 </div>
-<div class="col-md-4">
-    <h2>
-        *FireWood For Sale*
-    </h2>
-    <p .centerAlign { text-align center; }>
-        <small>
-            $60/Face Cord of mixed hardwood.<br />
-            Pick-Up or Delivery<br />
-        </small>
-    </p>
-
-    <br />
-
-    <p>
-        <small>
-            <strong>*Free* </strong> Delivery on purchases of 3-6 Face Cords within a 25 mile radius of New London WI,
-        </small>
-    </p>
-    @Html.ActionLink("More »", "FireWood", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
-
-</div>
 <div class="container">
-    <div class="text-primary"> <h2>Positions available for FALL and WINTER Season.</h2></div>
-</div>
-
-
-
-
-<div class="container">
-    <p class="text-primary">
-       
-            Located in Fox Valley Area. </br>
-            Full Time and Part Time Positions available.</br>
-            Please contact Northern Handyman 9202775947<a href=@Url.Action("About","Home") class="btn btn-more"><i class="fa fa-plus"></i>Read more about us.</a>
+    <div class="col-md-4">
+        <h2 class="text-success">
+            *FireWood For Sale*
+        </h2>
         
-    </p>
+            <p class="text-success">
+                <small>
+                    $60/Face Cord of mixed hardwood.<br />
+                    Pick-Up or Delivery<br />
+                </small>
+            </p>
+
+            <br />
+
+            <p class="text-success">
+                <small>
+                    <strong>*Free* </strong> Delivery on purchases of 3-6 Face Cords within a 25 mile radius of New London WI,
+                </small>
+            </p>
+            @Html.ActionLink("More »", "FireWood", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+
+        </div>
+    <div class="text-primary"> <h2>Positions available for FALL and WINTER Season.</h2>
+    <p class="text-primary">
+         Located in Fox Valley Area. <br />
+         Full Time and Part Time Positions available.<br />
+         Please contact Northern Handyman 9202775947
+</p>@Html.ActionLink("More »", "Employment", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+    </div>
+</div>
+
+
+
+
+<div class="container">
+  
 </div>
 
 <hr />
@@ -156,7 +154,7 @@
                 Our Services
             </h2>
             <div class="row">
-                <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true, "autoPlay":true}'>
+                <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true, "autoPlay":false}'>
                     <div class="item" style="padding-left:2em;">
                         <div class="col-md-4 text-center">
                             <span class="fa-stack fa-5x">
@@ -165,32 +163,17 @@
                                 <i class="glyphicon glyphicon-tree-deciduous" style="color:white;"></i>
                             </span>
                             <h4 class="text-weight-strong">
-                                Landscaping and Design
+                                Landscape Design
                             </h4>
                             <p></p>
                             <p>
-                                <a href=@Url.Action("Landscape_Lawncare_Index","Home") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
+                                <a href=@Url.Action("LandScapeDesignBuild", "Services") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
                             </p>
                         </div>
 
                     </div>
 
-                    <div class="item" style="padding-left:2em;">
-                        <div class="col-md-4 text-center">
-                            <span class="fa-stack fa-5x">
-                                <img src="~/img/Filler_ExtraImages/Dump truck Circle Image.png">
-                            </span>
-                            <h4 class="text-weight-strong">
-                                Equipment
-                            </h4>
-                            <p></p>
-                            <p>
-                                <a href=@Url.Action("Landscape_Lawncare_Index","Home") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-                            </p>
-                        </div>
-
-                    </div>
-
+                   
                     <div class="item" style="padding-left:2em;">
                         <div class="col-md-4 text-center">
                             <span class="fa-stack fa-5x">
@@ -200,11 +183,11 @@
 
                             </span>
                             <h4 class="text-weight-strong">
-                                Mowing &amp; Lawn care
+                                Landscape Maintenance
                             </h4>
                             <p></p>
                             <p>
-                                <a href=@Url.Action("Landscape_Lawncare_Index","Home") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
+                                <a href=@Url.Action("LandScapeMaintance","Services") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
                             </p>
                         </div>
 
@@ -223,7 +206,7 @@
 
 
                             <p>
-                                <a href=@Url.Action("Landscape_Lawncare_Index","Home")
+                                <a href=@Url.Action("SkidSteerWork","Services")
                                    class="btn btn-more i-right">Learn More<i class="fa fa-angle-right"></i></a>
                             </p>
                         </div>
@@ -240,7 +223,7 @@
                             </h4>
                             <p></p>
                             <p>
-                                <a href=@Url.Action("Landscape_Lawncare_Index","Home") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
+                                <a href=@Url.Action("SnowRemoval","Services") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
                             </p>
                         </div>
 
@@ -256,7 +239,7 @@
                             </h4>
                             <p></p>
                             <p>
-                                <a href=@Url.Action("Landscape_Lawncare_Index","Home")
+                                <a href=@Url.Action("TreeRemoval","Services")
                                    class="btn btn-more i-right">Learn More<i class="fa fa-angle-right"></i></a>
                             </p>
                         </div>
@@ -277,12 +260,14 @@
             <h2 class="block-title">
                 Before &amp; After Pictures
             </h2>
-            <p class="text-center">
-                Want to add life to your yard but dont know what to do? Give us a call!
-                The Northern Handyman will work with you to make every project, idea, or dream a reality.
-                We want to be the ones you choose to achieve the look you want.
+            <div class="container">
+                <p class="text-center">
+                    Want to add life to your yard but dont know what to do? Give us a call!</ br>
+                    The Northern Handyman will work with you to make every project, idea, or dream a reality.
+                    We want to be the ones you choose to achieve the look you want.
 
-            </p>
+                </p>
+            </div>
             <hr />
             <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true, "autoPlay":true}'>
                 <div class="item">

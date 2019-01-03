@@ -21,6 +21,12 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
         {
             return View();
         }
+
+        public ActionResult StormRelief()
+        {
+            return View();
+        }
+
         public ActionResult LandScapeMaintenance()
         {
             return View();

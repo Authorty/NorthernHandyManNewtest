@@ -639,10 +639,14 @@
     <Content Include="Views\Services\TreeRemoval.cshtml" />
     <Content Include="Views\Home\FireWood.cshtml" />
     <Content Include="Views\Home\Employment.cshtml" />
+    <Content Include="Views\Home\flooring.cshtml" />
+    <Content Include="Views\Services\StormRelief.cshtml" />
+    <Content Include="Views\Home\FloridaHomePage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
+    <Folder Include="img\Florida\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

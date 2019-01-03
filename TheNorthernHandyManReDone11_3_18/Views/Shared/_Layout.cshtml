@@ -16,6 +16,7 @@
     <meta property="og:description" content="">
 
 
+    @*@Scripts.Render("~/bundles/modernizr")*@
      
     <!-- Fav and touch icons --> 
     <link rel="shortcut icon" href="~/favicon.ico">
@@ -47,6 +48,7 @@
       Author: BootstrapMade.com
       Author URL: https://bootstrapmade.com
     ======================================================= -->
+    @Styles.Render("~/Content/css")
 </head>
 
 <body class="page-index has-hero">
@@ -161,44 +163,40 @@
                         <!-- Dropdown Menu -->
                         <ul class="dropdown-menu">
                             <li class="dropdown-header">Services</li>
+                            <li><a href=@Url.Action("StormRelief", "Services") tabindex="-1" class="menu-item">Storm Relief </a>
+                            -Florida<br /> -Wisconsin</li>
                             <li><a href=@Url.Action("LandScapeDesignBuild", "Services") tabindex="-1" class="menu-item">Landscaping &amp; Design </a></li>
                             <li><a href=@Url.Action("TreeRemoval", "Services") tabindex="-1" class="menu-item">Tree Removal</a></li>
                             <li><a href="login.html" tabindex="-1" class="menu-item">Skid Steer Work</a></li>
                             <li><a href=@Url.Action("SnowRemoval", "Services") tabindex="-1" class="menu-item">Snow Removal </a></li>
-                            <li><a href=@Url.Action("LandScapeMaintence", "Service") tabindex="-1" class="menu-item">LandScape Maintenance</a></li>
+                            <li><a href=@Url.Action("LandScapeMaintence", "Service") tabindex="-1" class="menu-item">Landscape Maintenance</a></li>
                             <li><a href=@Url.Action("FireWood", "Home") tabindex="-1" class="menu-item">Fire Wood </a></li>
                             <li><a href=@Url.Action("Employment", "Home") tabindex="-1" class="menu-item">Employment </a></li>
                             <li class="dropdown-footer">Make your dreams a reality today!</li>
                         </ul>
                     </li>
                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations<b class="caret"></b></a>
                         <!-- Dropdown Menu -->
-                        <ul class="dropdown-menu dropdown-menu-mm dropdown-menu-persist">
-                            <li class="row">
-                                <ul class="col-md-6">
-                                    <li class="dropdown-header">Websites and Apps</li>
-                                    <li><a href="#">Analysis and Planning</a></li>
-                                    <li><a href="#">User Experience / Information Architecture</a></li>
-                                    <li><a href="#">User Interface Design / UI Design</a></li>
-                                    <li><a href="#">Code &amp; Development / Implementation &amp; Support</a></li>
-                                </ul>
-                                <ul class="col-md-6">
-                                    <li class="dropdown-header">Enterprise solutions</li>
-                                    <li><a href="#">Business Analysis</a></li>
-                                    <li><a href="#">Custom UX Consulting</a></li>
-                                    <li><a href="#">Quality Assurance</a></li>
-                                </ul>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Services</li>
+                            <li><a href=@Url.Action("Index", "Home") tabindex="-1" class="menu-item">Wisconsin</a> 
+                             - New London<br />
+                                  - Appleton<br />
+                                  - Hortonville<br />
+                                  - Manawa<br />
+                                  - Weyauwega<br />
+                                  and surrounding areas</p></li>
+                            <li><a href=@Url.Action("FloridaHomePage", "Home") tabindex="-1" class="menu-item">Florida</a> 
+                            -Chipley<br />
+                            -Marianna<br />
+                            -Panama City<br />
+                            -SunnySide<br />
                             </li>
-                            <li class="dropdown-footer">
-                                <div class="row">
-                                    <div class="col-md-7">Like the lite version? <strong>Get the extended version of Flexor.</strong></div>
-                                    <div class="col-md-5">
-                                        <a href="https://bootstrapmade.com" class="btn btn-more btn-lg pull-right"><i class="fa fa-cloud-download"></i> Get It Now</a>
-                                    </div>
-                                </div>
-                            </li>
+                            <li class="dropdown-footer">Contact me to see if I can service your location</li>
                         </ul>
                     </li>
+             
                 </ul>
             </div>
             <!--/.navbar-collapse -->
@@ -356,7 +354,22 @@
                      </div>
                     <div class="credits">
 
-                        <p style="font-size: 4em;"><b>Call For Free Estimates </b>  : (920) 277-4947  </p>
+                        <p style="font-size: 4em;"><b>Call Us Today! </b>  : (920) 277-4947  </p>
+                        <small>
+                            *PRICES: 
+                            <br />
+                                Tree Service,
+                               We are unable to quote prices for tree service on our web site 
+                                or over the phone. Each tree is unique, 
+                                as is its location and relationship to other 
+                                variables such as homes, fences, garages, 
+                                power wires, streets, other trees, etc. 
+                                We can give an accurate quote only after 
+                                seeing the tree(s) and evaluating the situation.
+                                 We are always happy to come to your location to 
+                                give you a free estimate for your individual tree 
+                                service needs. We always give you the best possible 
+                                price for the highest quality work. </small>
                     </div>
                
                 <br />
@@ -392,7 +405,8 @@
     @RenderSection("Scripts", false)
     {    <!-- Required JavaScript Libraries -->
     }
-
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @*@Scripts.Render("~/bundles/bootstrap")*@
 
     <script type="text/javascript">
 

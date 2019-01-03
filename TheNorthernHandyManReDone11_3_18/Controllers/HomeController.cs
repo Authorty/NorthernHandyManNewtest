@@ -16,7 +16,10 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
         {
             return View();
         }
-
+        public ActionResult flooring()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -144,7 +147,11 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
         {
             return View();
         }
-      
+        public ActionResult FloridaHomePage()
+        {
+            return View();
+        }
+
 
 
     }

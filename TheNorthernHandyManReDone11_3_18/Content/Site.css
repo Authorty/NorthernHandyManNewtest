@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     padding-bottom: 20px;
 }
 
@@ -22,3 +22,25 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*h2 {
+    font-size:5px;
+}
+.h1 {
+    font-size:5px;
+   
+}
+.test {
+       font-size:5px;
+       color:green;
+}
+span .text-primary {
+    font-size:5px;
+    color:green;
+}*/
+/*row {
+    padding-left:2em;
+}*/
+/*b {
+    padding-left:2em;
+}*/
