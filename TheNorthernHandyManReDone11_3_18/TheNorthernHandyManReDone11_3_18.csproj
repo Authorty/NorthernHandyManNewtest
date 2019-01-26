@@ -253,6 +253,21 @@
     <Content Include="img\backgrounds\buildings.png" />
     <Content Include="img\backgrounds\city.png" />
     <Content Include="img\backgrounds\metro.png" />
+    <Content Include="img\Filler_ExtraImages\DimondFiller.png" />
+    <Content Include="img\Filler_ExtraImages\GrayFiller.jpg" />
+    <Content Include="img\Filler_ExtraImages\PebbleFiller.jpg" />
+    <Content Include="img\Florida\Hurricane_Michael_on_October_10,_2018.jpg" />
+    <Content Include="img\Florida\IMG_20190103_165615.jpg" />
+    <Content Include="img\Florida\IMG_20190103_165656.jpg" />
+    <Content Include="img\Florida\IMG_20190107_131703.jpg" />
+    <Content Include="img\Florida\IMG_20190110_164615-1.jpg" />
+    <Content Include="img\Florida\IMG_20190110_164615.jpg" />
+    <Content Include="img\Florida\IMG_20190110_164625.jpg" />
+    <Content Include="img\Florida\IMG_20190110_164634.jpg" />
+    <Content Include="img\Florida\IMG_20190111_101347.jpg" />
+    <Content Include="img\Florida\IMG_20190111_105635.jpg" />
+    <Content Include="img\Florida\IMG_20190112_081754.jpg" />
+    <Content Include="img\Florida\IMG_20190112_081758.jpg" />
     <Content Include="img\misc\bg_blockquote-flipped.png" />
     <Content Include="img\misc\bg_blockquote.png" />
     <Content Include="img\misc\bg_footer-map.png" />
@@ -646,7 +661,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
-    <Folder Include="img\Florida\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
