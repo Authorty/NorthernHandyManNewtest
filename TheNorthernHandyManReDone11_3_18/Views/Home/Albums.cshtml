@@ -3,8 +3,8 @@
     ViewBag.Title = "Albums";
 }
 <div class="container">
-<a href=~/img/ class="fa fa-plus fa"></a>
-    </div>
+    <a href=~/img/ class="fa fa-plus fa"></a>
+</div>
 <title>
     Photos | TheNorthernHandyman
 </title>
@@ -19,12 +19,244 @@
             <a href='@Url.Action("Images", "Home")'>Photos |</a>
 
             <a href='@Url.Action("Videos", "Home")'>Videos |</a>
-        </h1> 
-        <hr/>
-        </div>
+        </h1>
+        <hr />
     </div>
-    <!--/Row-->
-    <div class="container">
+</div>
+<!--/Row-->
+<div class="container">
+
+    <div class="row">
+        <nav id="filter" class="col-md-12 text-center">
+            <ul>
+                <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
+                <li><a href="#" class="btn-theme btn-small" data-filter=".Doors">Doors</a></li>
+                <li><a href="#" class="btn-theme btn-small" data-filter=".Decks">Decks</a></li>
+                <li><a href="#" class="btn-theme btn-small" data-filter=".Flooring">Flooring</a></li>
+                <li><a href="#" class="btn-theme btn-small" data-filter=".New Construction">New Construction</a></li>
+                <li><a href="#" class="btn-theme btn-small" data-filter=".Remodel/Home Improvement">Remodel/Home Improvement</a></li>
+                <li><a href="#" class="btn-theme btn-small" data-filter=".Roofing">Roofing</a></li>
+                <li><a href="#" class="btn-theme btn-small" data-filter=".Siding">Siding</a></li>
+                <li><a href="#" class="btn-theme btn-small" data-filter=".Windows">Windows</a></li>
+            </ul>
+        </nav>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+                    <article class="col-md-4 isotopeItem Doors">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                                <img src="../../Images/Doors/3.jpg" alt="welcome" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Doors</a></h5>
+                                    <a href="~/img/Equipment/SkidSteer_210x280.png" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Doors">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                                <img src="../../Images/Doors/2.jpg" alt="welcome" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Doors</a></h5>
+                                    <a href="~/img/Equipment/SkidSteer_210x280.png" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Decks">
+                        <div class="portfolio-item">
+                            <div class="wow bounceIn">
+                                <img src="../../Images/Decking/9.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Decks</a></h5>
+                                    <a href="~/img/Equipment/SkidSteer_210x280.png" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="col-md-4 isotopeItem Flooring">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInDownRight">
+                                <img src="../../Images/Flooring/IMG_3568.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Flooring</a></h5>
+                                    <a href="~/img/Equipment/SkidSteer_210x280.png" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Flooring">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInDownRight">
+
+                                <img src="../../Images/Flooring/IMG_3569.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Flooring</a></h5>
+                                    <a href="../../Images/Flooring/IMG_3569.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Flooring">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInDownRight">
+                                <img src="../../Images/Flooring/IMG_3571.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Flooring</a></h5>
+                                    <a href="../../Images/Flooring/IMG_3571.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Remodel/Home Improvement">
+                        <div class="portfolio-item">
+                            <div class="wow bounceIn">
+                                @*<img src="../../Images/portfolio/4.jpg" alt="" />*@
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Remodel/Home Improvement</a></h5>
+                                    @*<a href="../../Images/portfolio/4.jpg"*@ class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem New Construction">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInDownRight">
+
+                                <img src="../../Images/New Construction/8.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#"> New Construction</a></h5>
+                                    <a href="../../Images/New Construction/8.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem New Construction">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInDownRight">
+
+                                <img src="../../Images/New Construction/7.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#"> New Construction</a></h5>
+                                    <a href="../../Images/New Construction/7.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Roofing">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInDownRight">
+                                <img src="~/Images/Roofing/11.jpg" />
+                                <img src="../../Images/Roofing/11.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Roofing</a></h5>
+                                    <a href="../../Images/Roofing/11.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Siding">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInUpLeft">
+
+                                <img src="../../Images/Siding/6.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Siding</a></h5>
+                                    <a href="../../Images/Siding/6.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="col-md-4 isotopeItem Siding">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInUpLeft">
+
+                                <img src="../../Images/Siding/4.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Siding</a></h5>
+                                    <a href="../../Images/Siding/4.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Siding">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInUpLeft">
+                                <img src="../../Images/Siding/5.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Siding</a></h5>
+                                    <a href="../../Images/Siding/5.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4 isotopeItem Windows">
+                        <div class="portfolio-item">
+                            <div class="wow rotateInDownRight">
+
+                                <img src="../../Images/Windows/1.jpg" alt="" />
+                            </div>
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <h5><a href="#">Windows</a></h5>
+                                    <a href="../../Images/Windows/1.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
     <div class="row">
         <div class="col-sm-3 col-xs-6  portfolio-item">
 
@@ -95,4 +327,6 @@
 
 
 </div>
-<br/>
+<br />
+
+
