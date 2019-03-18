@@ -152,7 +152,13 @@ namespace TheNorthernHandyManReDone11_3_18.Controllers
             return View();
         }
 
-
+        #region -- Robots() Method --
+        public ActionResult Robots()
+        {
+            Response.ContentType = "text/plain";
+            return View();
+        }
+        #endregion
 
     }
     //public ActionResult 
