@@ -23,6 +23,24 @@ textarea {
     max-width: 280px;
 }
 
+#PortfolioHover .col-md-4:hover {
+    color: orange;
+}
+#PortfolioHover:hover {
+    background-color: gray;
+    color: orange;
+}
+#PortfolioHover p.text-muted:hover {
+    color:orange;
+    
+}
+#PortfolioHover p:hover {
+    color: orange;
+}
+#PortfolioHover a:hover {
+    color: orange;
+}
+
 /*h2 {
     font-size:5px;
 }

@@ -5,38 +5,9 @@
     <div class="inner">
         <div id="highlighted-slider" class="container">
             <hr />
-            <div class="item-slider" data-toggle="owlcarousel" data-owlcarousel-settings='{"singleItem":true, "navigation":true, "transitionStyle":"fadeUp", "autoPlay":true}'>
-                <!--Slideshow content-->
+            <div class="item-slider" data-toggle="owlcarousel" data-owlcarousel-settings='{"singleItem":true, "navigation":true, "transitionStyle":"fadeUp", "autoPlay":true}'>         
+            <!--Slideshow content-->
                 <!--Slide 1-->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-md-6 text-right-md item-caption">
-                            <h2 >
-                                <span class="text-primary">Servicing North Eastern Wisconsin</span> for over 30 Years!
-                            </h2>
-
-                            <p>
-                             
-                                    Have something small or large in mind, to transform your yard, or Business into a beautiful oasis?
-                                    Look no further; let our years of experience help you make your dreams a reality.
-                                    We specialize in residential and Commercial Communities.
-                               
-                            </p>
-                            <h2 class="text-success">
-                                <b>
-                                    Quality matters when experience shines brightest.
-                                </b>
-                            </h2>
-                        </div>
-                        <div class="col-md-6 hidden-xs">
-                            <img src="~/img/Filler_ExtraImages/Equipment.jpg" alt="Slide 2" class="center-block img-responsive">
-                        </div>
-                    </div>
-                    <hr>
-                    
-                </div>
-
-                <!--Slide 2-->
 
                 <div class="item">
                     <div class="row">
@@ -45,14 +16,13 @@
                                 Summer Season: <br />Landscape Needs
                             </h2>
 
-                            <h4>
-
-                                Landscaping, Excavating,  Retaining Walls,
+                            <h4 style="padding-right:2em;">
+                                Landscaping, Excavating, Retaining Walls,
                                 with over 30 years of experience there is so much we can do for you.
-                                 
+
                             </h4>
-                            <p>
-                                Being in the business for as long as we have, we have the skills to tame a widly
+                            <p style="padding-right:2em;">
+                                Being in the business for as long as we have, we've gained the skills to tame a widly
                                 overgrown to a yard and change it into something you can be proud of.
                             </p>
                             <a href=@Url.Action("Contact","Home") class="btn btn-more btn-lg i-right">Contact Us Now <i class="fa fa-plus"></i></a>
@@ -62,8 +32,9 @@
                             <img src="~/img/Filler_ExtraImages/FullStumpRemoval.jpg" alt="Slide 1" class="center-block img-responsive">
                         </div>
                     </div>
+                    
                 </div>
-                <!--Slide 3-->
+                <!--Slide 2-->
                 <div class="item">
                     <div class="row">
                         <div class="col-md-6 text-right-md item-caption">
@@ -75,7 +46,8 @@
                             </h2>
 
                             <h4 style="padding-left:2em;">
-                                Snow is an incredible hassle for homeowners and business owners across Wisconsin.
+                                Snow is a hassle for homeowners and business owners 
+                                across Wisconsin.
                             </h4>
                             <p style="padding-left:2em;">
                                 Depend on us to give you fast,
@@ -93,7 +65,9 @@
             </div>
         </div>
     </div>
+    <hr />
 </div>
+
 <div class="container">
     <div class="col-md-4">
         <h2 class="text-success">
@@ -107,41 +81,31 @@
                 </small>
             </p>
 
-            <br />
-
             <p class="text-success">
                 <small>
-                    <strong>*Free* </strong> Delivery on purchases of 3-6 Face Cords within a 25 mile radius of New London WI,
+                    <strong>*Free* </strong> Delivery on purchases of 3-6 Face Cords within a 25 mile radius of New London WI.
                 </small>
             </p>
             @Html.ActionLink("More »", "FireWood", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
 
         </div>
-    <div class="text-primary"> <h2>Positions available for FALL and WINTER Season.</h2>
+    @*<div class="text-primary"> <h2>Positions available for FALL and WINTER Season.</h2>
     <p class="text-primary">
          Located in Fox Valley Area. <br />
          Full Time and Part Time Positions available.<br />
          Please contact Northern Handyman 9202775947
-</p>@Html.ActionLink("More »", "Employment", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
-    </div>
+    </p>@Html.ActionLink("More »", "Employment", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+    </div>*@
 </div>
-
-
-
-
-<div class="container">
-  
-</div>
-
 <hr />
-
 <!-- ======== Region: #content ======== -->
 <div id="content">
     <!-- Mission Statement -->
     <div class="mission text-center block block-pd-sm block-bg-noise">
         <div class="container">
             <h2 class="text-shadow-white">
-                The Northern handyman is located in New London WI, but services most of North Eastern Wisconsin. We are two generations of landscapers striving for excellence in everything we do.
+                The Northern handyman is located in New London WI. We services most of North Eastern Wisconsin. 
+                We are two generations of landscapers striving for excellence in everything we do.
                 <a href=@Url.Action("About","Home") class="btn btn-more"><i class="fa fa-plus"></i>Read more about us.</a>
             </h2>
         </div>
@@ -155,62 +119,46 @@
             </h2>
             <div class="row">
                 <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true, "autoPlay":false}'>
+
+
                     <div class="item" style="padding-left:2em;">
                         <div class="col-md-4 text-center">
                             <span class="fa-stack fa-5x">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-
-                                <i class="glyphicon glyphicon-tree-deciduous" style="color:white;"></i>
+                                <a href=@Url.Action("LandScapeDesignBuild", "Services")>
+                                    <i class="glyphicon glyphicon-tree-deciduous" style="color:white;"></i>
+                                </a>
                             </span>
                             <h4 class="text-weight-strong">
                                 Landscape Design
                             </h4>
-                            <p></p>
-                            <p>
-                                <a href=@Url.Action("LandScapeDesignBuild", "Services") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-                            </p>
                         </div>
-
                     </div>
 
-                   
                     <div class="item" style="padding-left:2em;">
                         <div class="col-md-4 text-center">
-                            <span class="fa-stack fa-5x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <a href=@Url.Action("LandScapeMaintenance", "Services")>
+                                <span class="fa-stack fa-5x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
 
-                                <i class="glyphicon glyphicon-leaf" style="color:white;"></i>
-
-                            </span>
+                                    <i class="glyphicon glyphicon-leaf" style="color:white;"></i>
+                                </span></a>
                             <h4 class="text-weight-strong">
                                 Landscape Maintenance
                             </h4>
-                            <p></p>
-                            <p>
-                                <a href=@Url.Action("LandScapeMaintance","Services") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-                            </p>
                         </div>
-
                     </div>
 
                     <div class="item" style="padding-left:2em;">
                         <div class="col-md-4 text-center">
+                            <a href=@Url.Action("SkidSteerWork","Services")
                             <span class="fa-stack fa-5x">
-
                                 <img src="~/img/Filler_ExtraImages/SkidSteer2.jpg">
-                            </span>
+                            </span></a>
                             <h4 class="text-weight-strong">
                                 Skid Steer Work
                             </h4>
-                            <p></p>
-
-
-                            <p>
-                                <a href=@Url.Action("SkidSteerWork","Services")
-                                   class="btn btn-more i-right">Learn More<i class="fa fa-angle-right"></i></a>
-                            </p>
                         </div>
-
                     </div>
 
                     <div class="item" style="padding-left:2em;">
@@ -221,12 +169,7 @@
                             <h4 class="text-weight-strong">
                                 Snow Removal
                             </h4>
-                            <p></p>
-                            <p>
-                                <a href=@Url.Action("SnowRemoval","Services") class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-                            </p>
                         </div>
-
                     </div>
 
                     <div class="item" style="padding-left:2em;">
@@ -237,21 +180,12 @@
                             <h4 class="text-weight-strong">
                                 Tree Removal
                             </h4>
-                            <p></p>
-                            <p>
-                                <a href=@Url.Action("TreeRemoval","Services")
-                                   class="btn btn-more i-right">Learn More<i class="fa fa-angle-right"></i></a>
-                            </p>
                         </div>
-
                     </div>
-
                 </div>
-
+                </div>
             </div>
-
         </div>
-
     </div>
 
     <!--Showcase-->
@@ -265,7 +199,6 @@
                     Want to add life to your yard but dont know what to do? Give us a call!</ br>
                     The Northern Handyman will work with you to make every project, idea, or dream a reality.
                     We want to be the ones you choose to achieve the look you want.
-
                 </p>
             </div>
             <hr />
@@ -277,14 +210,7 @@
                             <span class="overlay-content"> <span class="h4">Fire Pit Before</span> </span>
                         </span>
                     </a>
-                    <div class="item-details bg-noise">
-                        <h4 class="item-title">
-                            <a href="#">Fire Pit Before</a>
-                        </h4>
-                        <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                    </div>
                 </div>
-
                 <div class="item">
                     <a href="#" class="overlay-wrapper">
                         <img src="~/img/Projects/FirePit_2of2.jpg" alt="Project 2 image" class="img-responsive underlay" height="275" width="206">
@@ -292,14 +218,7 @@
                             <span class="overlay-content"> <span class="h4">Fire Pit After</span> </span>
                         </span>
                     </a>
-                    <div class="item-details bg-noise">
-                        <h4 class="item-title">
-                            <a href="#">Fire Pit After</a>
-                        </h4>
-                        <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                    </div>
                 </div>
-
                 <div class="item">
                     <a href="#" class="overlay-wrapper">
                         <img src="~/img/Projects/FrontViewBefore.jpeg" alt="Patio Before" class="img-responsive underlay" height="275" width="206">
@@ -307,14 +226,7 @@
                             <span class="overlay-content"> <span class="h4">Patio Before</span> </span>
                         </span>
                     </a>
-                    <div class="item-details bg-noise">
-                        <h4 class="item-title">
-                            <a href="#">Patio Before</a>
-                        </h4>
-                        <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                    </div>
                 </div>
-
                 <div class="item">
                     <a href="#" class="overlay-wrapper">
                         <img src="~/img/Projects/FrontPatioAfter.jpeg" alt="Patio Finished" class="img-responsive underlay" height="275" width="206">
@@ -322,14 +234,7 @@
                             <span class="overlay-content"> <span class="h4">Patio After</span> </span>
                         </span>
                     </a>
-                    <div class="item-details bg-noise">
-                        <h4 class="item-title">
-                            <a href="#">Patio After</a>
-                        </h4>
-                        <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                    </div>
                 </div>
-
                 <div class="item">
                     <a href="#" class="overlay-wrapper">
                         <img src="~/img/TreeRemoval/TreeRemovalStart1-4.jpg" alt="Tree Removal Before" class="img-responsive underlay" height="275" width="206">
@@ -337,168 +242,162 @@
                             <span class="overlay-content"> <span class="h4">Tree Removal Before</span> </span>
                         </span>
                     </a>
-                    <div class="item-details bg-noise">
-                        <h4 class="item-title">
-                            <a href="#">Tree Removal Before</a>
-                        </h4>
-                        <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                    </div>
                 </div>
-
                 <div class="item">
                     <a href="#" class="overlay-wrapper">
                         <img src="~/img/TreeRemoval/TreeRemovalFinish4-4.jpg" alt="Tree Removal Finish" class="img-responsive underlay" height="275" width="206">
                         <span class="overlay">
-                            <span class="overlay-content"> <span class="h4">Tree Removal After</span> </span>
+                            <span class="overlay-content"> <span class="h4">After</span> </span>
                         </span>
                     </a>
-                    <div class="item-details bg-noise">
-                        <h4 class="item-title">
-                            <a href="#">Tree Removal After</a>
-                        </h4>
-                        <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                    </div>
                 </div>
-
                 <div class="item">
                     <a href="#" class="overlay-wrapper">
                         <img src="~/img/StumpGrinding/StumpGrinding1.jpg" alt="Stump Grinding Before" class="img-responsive underlay" height="275" width="206">
                         <span class="overlay">
-                            <span class="overlay-content"> <span class="h4">Stump Grinding Before</span> </span>
+                            <span class="overlay-content"> <span class="h4"> Before</span> </span>
                         </span>
                     </a>
-                    <div class="item-details bg-noise">
-                        <h4 class="item-title">
-                            <a href="#">Stump Grinding Before</a>
-                        </h4>
-                        <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                    </div>
                 </div>
+                <div class="item">
+                    <a href="#" class="overlay-wrapper">
+                        <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
+                        <span class="overlay">
+                            <span class="overlay-content"> <span class="h4">After</span> </span>
+                        </span>
+                    </a>
+                </div>
+
+
 
                 <div class="item">
                     <a href="#" class="overlay-wrapper">
                         <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
                         <span class="overlay">
-                            <span class="overlay-content"> <span class="h4">Project 8</span> </span>
+                            <span class="overlay-content"> <span class="h4">After</span> </span>
                         </span>
                     </a>
-                    <div class="item-details bg-noise">
-                        <h4 class="item-title">
-                            <a href="#">Stump Grinding After</a>
-                        </h4>
-                        <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="overlay-wrapper">
+                        <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
+                        <span class="overlay">
+                            <span class="overlay-content"> <span class="h4">After</span> </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="overlay-wrapper">
+                        <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
+                        <span class="overlay">
+                            <span class="overlay-content"> <span class="h4">After</span> </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="overlay-wrapper">
+                        <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
+                        <span class="overlay">
+                            <span class="overlay-content"> <span class="h4">After</span> </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="overlay-wrapper">
+                        <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
+                        <span class="overlay">
+                            <span class="overlay-content"> <span class="h4">After</span> </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="overlay-wrapper">
+                        <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
+                        <span class="overlay">
+                            <span class="overlay-content"> <span class="h4">After</span> </span>
+                        </span>
+                    </a>
                 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
-
         </div>
-
     </div>
-
-    <!-- Pricing -->
-    @*<div class="block-contained">
-        <h2 class="block-title">
-            Our Lawn Care Service Plans
-        </h2>
-
-        <div class="row">
-            <div class="col-md-3">
-                <div class="panel panel-default panel-pricing panel-pricing-popular text-center">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            Residential Lawn Services<em> Silver Plan</em>
-                        </h4>
-
-                    </div>
-
-                    <div class="panel-pricing-price">
-                        $ <span class="digits">25.00</span> /mo.<br />
-                        *Starting as low as
-                    </div>
-                    <div class="panel-body">
-                        <ul class="list-dotted">
-                            <li>Every two weeks we will Come and mow your yard and weed wack</li>
-
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3">
-                <div class="panel panel-default panel-pricing panel-pricing-popular text-center">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            Commercial Lawn Services<em> Silver Plan</em>
-                        </h4>
-                    </div>
-                    <div class="panel-pricing-price">
-                        $ <span class="digits">49.95</span> /mo.<br />
-                        *Starting as low as
-                    </div>
-                    <div class="panel-body">
-                        <ul class="list-dotted">
-                            <li>Every two weeks we will Come and mow your yard and weed wack</li>
-
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center">
-                <div class="panel panel-default panel-pricing panel-pricing-highlighted text-center">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            Residential Lawn Services<em> Gold Plan</em>
-                        </h4>
-                    </div>
-                    <div class="panel-pricing-price">
-                        $ <span class="digits">70.00</span> /mo.<br />
-                        *Starting as low as
-                    </div>
-                    <div class="panel-body">
-                        <ul class="list-dotted">
-                            <li>Every two weeks we will Come and mow your yard and weed wack</li>
-                            <li>Maintin Trees</li>
-                            <li>Clean Shrubbery</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center">
-                <div class="panel panel-default panel-pricing panel-pricing-highlighted text-center">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            Commercial Lawn Services<em> Gold Plan</em>
-                            <span class="panel-pricing-popular"><i class="fa fa-thumbs-up"></i> Popular</span>
-                        </h4>
-                    </div>
-                    <div class="panel-pricing-price">
-                        $ <span class="digits">99.95</span> /mo.<br />
-                        *Starting as low as
-                    </div>
-                    <div class="panel-body">
-                        <ul class="list-dotted">
-                            <li>Every two weeks we will Come and mow your yard and weed wack</li>
-                            <li>Maintin Trees</li>
-                            <li>Clean Shrubbery</li>
-
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-    </div>*@
 </div>
