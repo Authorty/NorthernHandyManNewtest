@@ -14,7 +14,7 @@
             <!--Primary Location-->
             <div class="col-lg-5 text-muted">
                 <strong>Primary Location: <br /></strong>
-                <small>
+                @*<small>*@
                     Wisconsin<br />
                     <a href="#"> - New London, WI </a><br />
                     <a href="#"> - Three Lakes, WI</a><br />
@@ -23,20 +23,20 @@
                     -Marianna,FL<br />
                     -Panama City,FL<br />
                     -SunnySide,Fl<br />
-                </small>
+                @*</small>*@
                 <br />
-                <div class="col-lg-5 text-muted">
+                <div class="col-lg-5 text-warn text-primary">
                     <strong> We Also Serve The Fox Cities:<br /></strong>
-                    <small>
+                    @*<small>*@
                        
-                        <a href="#">- Appleton, WI</a><br />
-                        <a href="#">- Combined Locks, WI</a><br />
-                        <a href="#">- Kaukauna, WI</a><br />
-                        <a href="#">- Kimberly, WI</a><br />
-                        <a href="#">- Little Chute, WI</a><br />
-                        <a href="#">- Grand Chute, WI</a><br />
-                        <a href="#">- Greenville, WI</a><br />
-                    </small>
+                        - Appleton, WI<br />
+                        - Combined Locks, WI<br />
+                        - Kaukauna, WI<br />
+                        - Kimberly, WI<br />
+                        - Little Chute, WI<br />
+                        - Grand Chute, WI<br />
+                        - Greenville, WI<br />
+                    @*</small>*@
                     <br />
                 </div>
             </div>
@@ -87,7 +87,7 @@
                             @Html.TextAreaFor(m => m.Message,new {@class = "form-control job-description", placeholder = "Job Description", required = "required"})
                     </div>
                     <div class="button-wrapper text-center">
-                        <input type="submit" value="Send Email" name="submit" class="btn-success">
+                        <input type="submit" value="Send Email" name="submit" class="btn-primary" style="color:black;">
                         <span class="btn-xs text-primary">* Required Fields</span>
                     </div>
                 </div>

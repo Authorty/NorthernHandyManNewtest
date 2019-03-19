@@ -1,14 +1,14 @@
 ﻿@*<hr class="text-primary" style="height:15px; border:none; background-color:#ff5821;" />*@
 <!--Body-->
 <div>
-    <div class="inner">
-        <div id="highlighted-slider" class="container">
+    <div @*class="inner"*@>
+        <div @*id="highlighted-slider"*@ class="container-fluid">
             <hr />
 
             <!--HeaderStatement-->
             <div class="item">
                 <div class="row">
-                    <div class="col-md-6-md item-caption">
+                    <div class="col-md-6-md item-caption text-center">
                         <h2>
                             <span class="text-primary">
                                 The Northern Handyman Services In Florida
@@ -21,7 +21,7 @@
             </div>
 
             <!-- ======== Region: #content ======== -->
-            <div id="content">
+            <div id="content"  >
                 <!-- Mission Statement -->
                 <div class="mission text-center block block-pd-sm block-bg-noise">
                     <div class="container">
@@ -33,274 +33,283 @@
                    
                     </div>
                 </div>
+                <div class="row" style="background-color:white; margin-right:2em;">
+                    @*main Body*@
+                    <div class="row col-md-9" @*style="background-color:white;"*@>
 
-                <div class="row">
+                        @*This pushes it 2 over*@
+                        <div class="col-md-offset-2">
+                            @*This Is the Articles*@
+                            <div class="col-md-6">
+                                <div>
 
-                    @*This pushes it 2 over*@
-                    <div class="col-md-offset-2">
-                        @*This Is the Articles*@
-                        <div class="col-md-7">
-                            <div>
-
-                                <p>
-                                    <h5></h5>
-                                </p>
-                            </div>
-
-                            @*Max Height and image sets image size*@
-                            <div class="item">
-                                <a href="#" class="overlay-wrapper">
-                                    <img src="~/img/Florida/IMG_20190107_131703.jpg" alt="Storm Clean Up" class="img-responsive underlay">
-                                    <span class="overlay">
-                                        <span class="overlay-content"> <span>Storm Clean Up</span></span>
-                                    </span>
-                                </a>
-
-                            </div>
-                            @*<figure>
-                                    <img src="~/img/Filler_ExtraImages/GrayFiller.jpg" style="max-height:50em; max-width:50em;" />
-
-                                </figure>*@
-
-                            <br />
-                            <!--Showcase-->
-                            <div class="showcase block block-border-bottom-grey">
-                                <div class="container">
-                                    <h2 class="block-title">
-                                        Before &amp; After Pictures
-                                    </h2>
-                                    <div class="container">
-                                        <p class="text-center">
-                                        <p>
-                                            Do you have Fallen trees,branches or Storm debris in your yard, driveway, or even blocking your street?
-                                        </p>
-
-                                        </p>
-                                    </div>
-                                    <hr />
-                                    <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true, "autoPlay":true}'>
-                                        <div class="item">
-                                            <a href="#" class="overlay-wrapper">
-                                                <img src="~/img/Projects/FirePit_1of2.jpg" alt="Fire Pit Before image" class="img-responsive underlay" height="275" width="206">
-                                                <span class="overlay">
-                                                    <span class="overlay-content"> <span class="h4">Fire Pit Before</span> </span>
-                                                </span>
-                                            </a>
-                                            <div class="item-details bg-noise">
-                                                <h4 class="item-title">
-                                                    <a href="#">Fire Pit Before</a>
-                                                </h4>
-                                                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#" class="overlay-wrapper">
-                                                <img src="~/img/Projects/FirePit_2of2.jpg" alt="Project 2 image" class="img-responsive underlay" height="275" width="206">
-                                                <span class="overlay">
-                                                    <span class="overlay-content"> <span class="h4">Fire Pit After</span> </span>
-                                                </span>
-                                            </a>
-                                            <div class="item-details bg-noise">
-                                                <h4 class="item-title">
-                                                    <a href="#">Fire Pit After</a>
-                                                </h4>
-                                                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#" class="overlay-wrapper">
-                                                <img src="~/img/Projects/FrontViewBefore.jpeg" alt="Patio Before" class="img-responsive underlay" height="275" width="206">
-                                                <span class="overlay">
-                                                    <span class="overlay-content"> <span class="h4">Patio Before</span> </span>
-                                                </span>
-                                            </a>
-                                            <div class="item-details bg-noise">
-                                                <h4 class="item-title">
-                                                    <a href="#">Patio Before</a>
-                                                </h4>
-                                                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#" class="overlay-wrapper">
-                                                <img src="~/img/Projects/FrontPatioAfter.jpeg" alt="Patio Finished" class="img-responsive underlay" height="275" width="206">
-                                                <span class="overlay">
-                                                    <span class="overlay-content"> <span class="h4">Patio After</span> </span>
-                                                </span>
-                                            </a>
-                                            <div class="item-details bg-noise">
-                                                <h4 class="item-title">
-                                                    <a href="#">Patio After</a>
-                                                </h4>
-                                                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#" class="overlay-wrapper">
-                                                <img src="~/img/TreeRemoval/TreeRemovalStart1-4.jpg" alt="Tree Removal Before" class="img-responsive underlay" height="275" width="206">
-                                                <span class="overlay">
-                                                    <span class="overlay-content"> <span class="h4">Tree Removal Before</span> </span>
-                                                </span>
-                                            </a>
-                                            <div class="item-details bg-noise">
-                                                <h4 class="item-title">
-                                                    <a href="#">Tree Removal Before</a>
-                                                </h4>
-                                                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#" class="overlay-wrapper">
-                                                <img src="~/img/TreeRemoval/TreeRemovalFinish4-4.jpg" alt="Tree Removal Finish" class="img-responsive underlay" height="275" width="206">
-                                                <span class="overlay">
-                                                    <span class="overlay-content"> <span class="h4">Tree Removal After</span> </span>
-                                                </span>
-                                            </a>
-                                            <div class="item-details bg-noise">
-                                                <h4 class="item-title">
-                                                    <a href="#">Tree Removal After</a>
-                                                </h4>
-                                                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#" class="overlay-wrapper">
-                                                <img src="~/img/StumpGrinding/StumpGrinding1.jpg" alt="Stump Grinding Before" class="img-responsive underlay" height="275" width="206">
-                                                <span class="overlay">
-                                                    <span class="overlay-content"> <span class="h4">Stump Grinding Before</span> </span>
-                                                </span>
-                                            </a>
-                                            <div class="item-details bg-noise">
-                                                <h4 class="item-title">
-                                                    <a href="#">Stump Grinding Before</a>
-                                                </h4>
-                                                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#" class="overlay-wrapper">
-                                                <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
-                                                <span class="overlay">
-                                                    <span class="overlay-content"> <span class="h4">Project 8</span> </span>
-                                                </span>
-                                            </a>
-                                            <div class="item-details bg-noise">
-                                                <h4 class="item-title">
-                                                    <a href="#">Stump Grinding After</a>
-                                                </h4>
-                                                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
+                                    <p>
+                                        <h5>test</h5>
+                                    </p>
                                 </div>
 
-                            </div>
-                        </div>
-
-                        @*Side Panel*@
-                        <div class="col-md-3">
-                            <h2 class="text-primary"><b>Storm Relief</b> </h2>
-                            @*Header Section*@
-                            <h2 class="text-success">Hurricane Clean-up</h2>
-                            <hr class="text-primary" />
-
-
-
-                            @*Articles*@
-                            <div>
+                                @*Max Height and image sets image size*@
                                 <div class="item">
                                     <a href="#" class="overlay-wrapper">
-                                        <img src="~/img/Florida/Hurricane_Michael_on_October_10,_2018.jpg"
-                                             alt="Storm Clean Up" class="img-responsive underlay, col-md-5" style="max-height:7em; max-width:7em;">
+                                        <img src="~/img/StormCleanUp/StormCleanUp-1/1.jpg" alt="Storm Clean Up" class="img-responsive underlay">
                                         <span class="overlay">
-                                            <span class="overlay-content">
-                                                <p>Hurricane Michael</p>
-                                            </span>
+                                            <span class="overlay-content"> <span>Storm Clean Up</span></span>
                                         </span>
                                     </a>
 
-
-                                    @*Add Caption Here*@
-
-                                    <div class="col-md-6"
-                                         style="margin-left:5px">
-                                        <p class="text-primary">
-
-                                        </p>
-                                    </div>
-                                   
                                 </div>
-                                <div class="item">
-                                    
 
-                                    @*Add Caption Here*@
+                                @*<figure>
+                            <img src="~/img/Filler_ExtraImages/GrayFiller.jpg" style="max-height:50em; max-width:50em;" />
 
-                                    <div class="col-md-6"
-                                         style="margin-left:5px">
-                                        <p class="text-primary">
+                        </figure>*@
 
-                                        </p>
-                                    </div>
-                                    <b class="text-primary col-md-12">
-                                        Services
-                                    </b>
-                                </div>
-                                <!--The List Of Services -->
-                                <ul>
-
-                                    <li>
-                                        Stump Removal
-                                    </li>
-
-                                    <li>
-                                        Storm Damage Clean Up
-                                    </li>
-                                    <li>
-                                        Brush &amp; Shrub Care
-                                    </li>
-
-                                    <li>
-                                        Limb Removal
-                                    </li>
-                                    <li>
-                                        Driveway Structure Repair
-                                    </li>
-                                    <li>
-                                        Lot Clearing
-                                    </li>
-                                    
-                                     
-                                </ul>
-                                <!--- /The List Of Services --->
-
-                                <hr />
-
-                               
-
-
-
-
-
+                                <br />
 
                             </div>
-
 
 
                         </div>
                     </div>
+                    @*Side Panel*@
+                    <div class="col-md-3" @*style="background-color:white;"*@>
+                        <h2 class="text-primary"><b>Storm Relief</b> </h2>
+                        @*Header Section*@
+                        <h2 class="text-success">Hurricane Clean-up</h2>
+                        <hr class="text-primary" />
+
+
+
+                        @*Articles*@
+                        <div>
+                            <div class="item">
+                                <a href="#" class="overlay-wrapper">
+                                    <img src="~/img/Florida/Hurricane_Michael_on_October_10,_2018.jpg"
+                                         alt="Storm Clean Up" class="img-responsive underlay, col-md-5" style="max-height:7em; max-width:7em;">
+                                    <span class="overlay">
+                                        <span class="overlay-content">
+                                            <p>Hurricane Michael</p>
+                                        </span>
+                                    </span>
+                                </a>
+
+
+                                @*Add Caption Here*@
+
+                                <div class="col-md-3"
+                                     style="margin-left:5px">
+                                    <p class="text-primary">
+
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="item">
+
+
+                                @*Add Caption Here*@
+
+                                <div class="col-md-6"
+                                     style="margin-left:5px">
+                                    <p class="text-primary">
+
+                                    </p>
+                                </div>
+                                <b class="text-primary col-md-12">
+                                    Services
+                                </b>
+                            </div>
+                            <!--The List Of Services -->
+                            <ul>
+
+                                <li>
+                                    Stump Removal
+                                </li>
+
+                                <li>
+                                    Storm Damage Clean Up
+                                </li>
+                                <li>
+                                    Brush &amp; Shrub Care
+                                </li>
+
+                                <li>
+                                    Limb Removal
+                                </li>
+                                <li>
+                                    Driveway Structure Repair
+                                </li>
+                                <li>
+                                    Lot Clearing
+                                </li>
+
+
+                            </ul>
+                            <!--- /The List Of Services --->
+
+                            <hr />
+
+                        </div>
+
+
+
+                    </div>
                 </div>
+
+
+
+ 
+               
             </div>
         </div>
 
+    </div>
+
+    @*Carousel*@
+
+    <div class="row">
+        <!--Showcase-->
+        <div class="showcase block block-border-bottom-grey">
+            <div class="container">
+                <h2 class="block-title">
+                    Before &amp; After Pictures
+                </h2>
+                <div class="container">
+                    <p class="text-center">
+                    <p>
+                        Do you have Fallen trees,branches or Storm debris in your yard, driveway, or even blocking your street?
+                    </p>
+
+                    </p>
+                </div>
+                <hr />
+                <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true, "autoPlay":true}'>
+                    <div class="item">
+                        <a href="#" class="overlay-wrapper">
+                            <img src="~/img/Projects/FirePit_1of2.jpg" alt="Fire Pit Before image" class="img-responsive underlay" height="275" width="206">
+                            <span class="overlay">
+                                <span class="overlay-content"> <span class="h4">Fire Pit Before</span> </span>
+                            </span>
+                        </a>
+                        <div class="item-details bg-noise">
+                            <h4 class="item-title">
+                                <a href="#">Fire Pit Before</a>
+                            </h4>
+                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="#" class="overlay-wrapper">
+                            <img src="~/img/Projects/FirePit_2of2.jpg" alt="Project 2 image" class="img-responsive underlay" height="275" width="206">
+                            <span class="overlay">
+                                <span class="overlay-content"> <span class="h4">Fire Pit After</span> </span>
+                            </span>
+                        </a>
+                        <div class="item-details bg-noise">
+                            <h4 class="item-title">
+                                <a href="#">Fire Pit After</a>
+                            </h4>
+                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="#" class="overlay-wrapper">
+                            <img src="~/img/Projects/FrontViewBefore.jpeg" alt="Patio Before" class="img-responsive underlay" height="275" width="206">
+                            <span class="overlay">
+                                <span class="overlay-content"> <span class="h4">Patio Before</span> </span>
+                            </span>
+                        </a>
+                        <div class="item-details bg-noise">
+                            <h4 class="item-title">
+                                <a href="#">Patio Before</a>
+                            </h4>
+                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="#" class="overlay-wrapper">
+                            <img src="~/img/Projects/FrontPatioAfter.jpeg" alt="Patio Finished" class="img-responsive underlay" height="275" width="206">
+                            <span class="overlay">
+                                <span class="overlay-content"> <span class="h4">Patio After</span> </span>
+                            </span>
+                        </a>
+                        <div class="item-details bg-noise">
+                            <h4 class="item-title">
+                                <a href="#">Patio After</a>
+                            </h4>
+                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="#" class="overlay-wrapper">
+                            <img src="~/img/TreeRemoval/TreeRemovalStart1-4.jpg" alt="Tree Removal Before" class="img-responsive underlay" height="275" width="206">
+                            <span class="overlay">
+                                <span class="overlay-content"> <span class="h4">Tree Removal Before</span> </span>
+                            </span>
+                        </a>
+                        <div class="item-details bg-noise">
+                            <h4 class="item-title">
+                                <a href="#">Tree Removal Before</a>
+                            </h4>
+                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="#" class="overlay-wrapper">
+                            <img src="~/img/TreeRemoval/TreeRemovalFinish4-4.jpg" alt="Tree Removal Finish" class="img-responsive underlay" height="275" width="206">
+                            <span class="overlay">
+                                <span class="overlay-content"> <span class="h4">Tree Removal After</span> </span>
+                            </span>
+                        </a>
+                        <div class="item-details bg-noise">
+                            <h4 class="item-title">
+                                <a href="#">Tree Removal After</a>
+                            </h4>
+                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="#" class="overlay-wrapper">
+                            <img src="~/img/StumpGrinding/StumpGrinding1.jpg" alt="Stump Grinding Before" class="img-responsive underlay" height="275" width="206">
+                            <span class="overlay">
+                                <span class="overlay-content"> <span class="h4">Stump Grinding Before</span> </span>
+                            </span>
+                        </a>
+                        <div class="item-details bg-noise">
+                            <h4 class="item-title">
+                                <a href="#">Stump Grinding Before</a>
+                            </h4>
+                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="#" class="overlay-wrapper">
+                            <img src="~/img/StumpGrinding/StumpGrindingCleanup1.jpg" alt="Stump Grinding After" class="img-responsive underlay" height="275" width="206">
+                            <span class="overlay">
+                                <span class="overlay-content"> <span class="h4">Project 8</span> </span>
+                            </span>
+                        </a>
+                        <div class="item-details bg-noise">
+                            <h4 class="item-title">
+                                <a href="#">Stump Grinding After</a>
+                            </h4>
+                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
 </div>
 

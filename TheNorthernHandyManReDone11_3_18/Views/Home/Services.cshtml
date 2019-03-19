@@ -32,22 +32,26 @@
                     <!--Storm Releif Content-->
                     <div class="row">
                         <div class="col-md-4 portfolio-item" id="PortfolioHover">
-                            <a href='@Url.Action("StormRelief", "Services")' class="portfolio-link" data-toggle="modal">
+                           
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content">
                                         <i class="fa fa-plus fa-3x"></i>
                                         <div class="portfolio-caption">
                                             <h4>Storm Relief</h4>
                                         </div>
-                                        <a href="@Url.Action("Index","Home")">
+                                        @*<a href="@Url.Action("Index","Home")">*@
                                             <p class="text-muted">
                                                 Locations:
                                                 <br />
-                                                -Wisconsin
+                                                <a href='@Url.Action("Index", "Home")' class="portfolio-link" data-toggle="modal">
+                                                    -Wisconsin
+                                                </a>
                                                 <br />
-                                                -Florida
+                                                <a href='@Url.Action("StormRelief", "Services")' class="portfolio-link" data-toggle="modal">
+                                                    -Florida
+                                                    </a>
                                             </p>
-                                        </a>
+                                        @*</a>*@
                                     </div>
                                 </div>
 
@@ -57,7 +61,7 @@
                                 <br />
 
 
-                            </a>
+                            
                             <!--Skid Steer Content-->
                             <!--/col-md-4 col-sm-6-->
                             <hr />

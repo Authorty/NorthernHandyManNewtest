@@ -4,8 +4,11 @@
 
 @{
     ViewBag.Title = "Employment | TheNorthernHandyman";
-
+    var employeeNeeded = false;
 }
+
+@if (employeeNeeded)
+{
 <div class="container">
     <h1 class="text-primary">Employment...<small> Would you like to Join our team?</small></h1>
 
@@ -37,3 +40,36 @@
 <br />
     <br />
     <br />
+}
+else
+{
+    <div class="container">
+        <h1 class="text-primary">Employment...<small> Would you like to Join our team?</small></h1>
+
+        <div class="jumbotron">
+            <p>
+                The Northern Handyman will only accept applications for current job opportunities.<br />
+                Please see below of a list of available opportunities:<br />
+            </p>
+            <br />
+            <p>
+                <h4>
+                    <strong>Available Positions:</strong>
+                </h4>
+
+                <strong> Hiring availability</strong><br />
+
+                *The Northern HandyMan is not currently accepting any positions*<br />
+
+            </p>
+            <br />
+            <br />
+            <br />
+        </div>
+
+
+    </div>
+    <br />
+    <br />
+    <br />
+}

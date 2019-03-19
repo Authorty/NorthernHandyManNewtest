@@ -1965,6 +1965,11 @@ a.btn-hh-trigger.target-open:after {
   border: none;
   list-style: none;
 }
+
+.container .item-carousel a {
+    color: rgb(119, 119, 119);
+}
+
 .navbar-default .navbar-nav .dropdown-menu li.dropdown-header {
   padding-left: 0;
   padding-right: 0;
@@ -1991,6 +1996,9 @@ a.btn-hh-trigger.target-open:after {
 .navbar-default .navbar-nav .dropdown-menu li.row {
   margin-left: -15px;
   margin-right: -15px;
+}
+.row {
+    margin-left:  0px;
 }
 .navbar-default .navbar-nav .dropdown-menu li a:not(.btn) {
   margin: 0;

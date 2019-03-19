@@ -179,9 +179,9 @@
                                     </li>
                                     <li><a href=@Url.Action("LandScapeDesignBuild", "Services") tabindex="-1" class="menu-item">Landscaping &amp; Design </a></li>
                                     <li><a href=@Url.Action("TreeRemoval", "Services") tabindex="-1" class="menu-item">Tree Removal</a></li>
-                                    <li><a href="login.html" tabindex="-1" class="menu-item">Skid Steer Work</a></li>
+                                    <li><a href=@Url.Action("SkidSteerWork","Services") tabindex="-1" class="menu-item">Skid Steer Services</a></li>
                                     <li><a href=@Url.Action("SnowRemoval", "Services") tabindex="-1" class="menu-item">Snow Removal </a></li>
-                                    <li><a href=@Url.Action("LandScapeMaintence", "Service") tabindex="-1" class="menu-item">Landscape Maintenance</a></li>
+                                    <li><a href=@Url.Action("LandScapeMaintenance", "Services") tabindex="-1" class="menu-item">Landscape Maintenance</a></li>
                                     <li><a href=@Url.Action("FireWood", "Home") tabindex="-1" class="menu-item">Fire Wood </a></li>
                                     <li><a href=@Url.Action("Employment", "Home") tabindex="-1" class="menu-item">Employment </a></li>
                                     <li class="dropdown-footer">Make your dreams a reality today!</li>
@@ -405,23 +405,23 @@
     <script src="~/contactform/contactform.js"></script>
 
     @*Wow Animation*@
-    <script src="../../Scripts/jquery.easing.1.3.js"></script>
-    <script src="../../Scripts/jquery.isotope.min.js"></script>
-    <script src="../../Scripts/jquery.nicescroll.min.js"></script>
-    @*<script src="../../Scripts/fancybox/jquery.fancybox.pack.js"></script>*@
-    <script src="../../Scripts/skrollr.min.js"></script>
-    <script src="../../Scripts/jquery.scrollTo.js"></script>
-    <script src="../../Scripts/jquery.localScroll.js"></script>
-    <script src="../../Scripts/stellar.js"></script>
-    <script src="../../Scripts/responsive-slider.js"></script>
-    <script src="../../Scripts/jquery.appear.js"></script>
-    <script src="../../Scripts/grid.js"></script>
-    <script src="../../Scripts/main.js"></script>
-    <script src="../../Scripts/wow.min.js"></script>
+    <script src="~/Scripts/jquery.easing.1.3.js"></script>
+    <script src="~/Scripts/jquery.isotope.min.js"></script>
+    <script src="~/Scripts/jquery.nicescroll.min.js"></script>
+    <script src="~/Scripts/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="~/Scripts/skrollr.min.js"></script>
+    <script src="~/Scripts/jquery.scrollTo.js"></script>
+    <script src="~/Scripts/jquery.localScroll.js"></script>
+    <script src="~/Scripts/stellar.js"></script>
+    <script src="~/Scripts/responsive-slider.js"></script>
+    <script src="~/Scripts/jquery.appear.js"></script>
+    <script src="~/Scripts/grid.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    <script src="~/Scripts/wow.min.js"></script>
     <script>
         wow = new WOW({}).init();
     </script>
-
+    @*<script src="~/Scripts/grid.js"></script>*@
 
 
     @RenderSection("Scripts", false)
